@@ -112,10 +112,18 @@ class MainActivity : ComponentActivity() {
                         }
                     }
 
+                    Column(
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        modifier = Modifier.padding(top = 36.dp)
+                    ) {
+                        Text(text = "Toplam Harcanan Su")
+                        Text(text = "$totalWaterUsage", fontWeight = FontWeight.SemiBold)
+                    }
+
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             Text(text = "Su Fiyatı")
-                            Text(text = "$price TL", fontWeight = FontWeight.SemiBold)
+                            Text(text = "${price.toFloat()} TL", fontWeight = FontWeight.SemiBold)
                         }
                         Button(onClick = {
                             price = unitPrice * totalWaterUsage
@@ -127,11 +135,6 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-
     }
 
     private fun addFloatListener(value: String, onChange: (Double) -> Unit): ValueEventListener {
