@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "969027863587",
+    "project_id": "bitirme-projesi-f45f8",
+    "storage_bucket": "bitirme-projesi-f45f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969027863587:android:4010af1f7404e485d3dd96",
+        "android_client_info": {
+          "package_name": "com.akilli.musluk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969027863587-405p9d9jmqogtpdgb02t610da6vigpqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCV5pt2P-JDlA_taZvFG9mRN45FUGOg24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969027863587-405p9d9jmqogtpdgb02t610da6vigpqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
