@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "969027863587",
+    "firebase_url": "https://bitirme-projesi-f45f8-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "bitirme-projesi-f45f8",
     "storage_bucket": "bitirme-projesi-f45f8.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "969027863587-t4bfm89snbvgb0ti6nd1rme2pr0dgo49.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akilli.musluk",
+            "certificate_hash": "6276113e2efcf27da2240093e009dd0d614fde47"
+          }
+        },
         {
           "client_id": "969027863587-405p9d9jmqogtpdgb02t610da6vigpqg.apps.googleusercontent.com",
           "client_type": 3
