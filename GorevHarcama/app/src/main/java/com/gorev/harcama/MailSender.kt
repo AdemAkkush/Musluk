@@ -5,10 +5,10 @@ import android.content.Intent
 import androidx.core.content.FileProvider
 
 object MailSender {
-    /** PDF'i oluşturur ve kayıtlı adrese gönderilmek üzere e-posta uygulamasını açar. */
+    /** Excel dosyasını oluşturur ve kayıtlı adrese gönderilmek üzere e-posta uygulamasını açar. */
     fun send(context: Context, settings: Settings, report: Report) {
-        val pdf = PdfReport.create(context, settings, report)
-        val uri = FileProvider.getUriForFile(context, "${context.packageName}.fileprovider", pdf)
+        val xlsx = XlsxReport.create(context, settings, report)
+        val uri = FileProvider.getUriForFile(context, "${context.packageName}.fileprovider", xlsx)
         val t = report.totals(settings)
 
         val subject = "Görev Bildirim Formu - ${settings.personName} - " +
@@ -23,11 +23,11 @@ object MailSender {
             appendLine("Görev harcamaları: ${t.expenses.tl()}")
             appendLine("Genel alacak: ${t.grand.tl()}")
             appendLine()
-            appendLine("Detaylı form ekte (PDF) yer almaktadır.")
+            appendLine("Detaylı form ekte (Excel) yer almaktadır.")
         }
 
         val intent = Intent(Intent.ACTION_SEND).apply {
-            type = "application/pdf"
+            type = XlsxReport.MIME
             putExtra(Intent.EXTRA_EMAIL, arrayOf(settings.recipientEmail))
             putExtra(Intent.EXTRA_SUBJECT, subject)
             putExtra(Intent.EXTRA_TEXT, body)

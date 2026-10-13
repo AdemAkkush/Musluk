@@ -7,7 +7,7 @@ Haftalık **Görev Bildirim Formu (FR.048)** için Android uygulaması. Excel do
 - Harcama fişleri (firma, fiş no, tarih, tutar, şirket kartı) – yemek ve ekstra harcamalar
 - Toplamlar (görev alacağı, harcamalar, genel alacak)
 
-**E-posta ile gönder** düğmesi formu PDF olarak üretir ve ayarlarda kayıtlı adrese e-posta uygulamasıyla gönderir.
+**E-posta ile gönder** düğmesi formu Excel (.xlsx) dosyası olarak üretir (toplamlar Excel formülü) ve ayarlarda kayıtlı adrese e-posta uygulamasıyla gönderir.
 
 Tarihler seçildiğinde hafta içi gün sayısı ve otel gecesi otomatik önerilir, sonradan elle değiştirilebilir.
 Ücretler ve alıcı adresi sağ üstteki Ayarlar'dan düzenlenir.
